@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/4da791a709.js" crossorigin="anonymous"></script>
+    <title>Momentum App</title>
+</head>
+<body>
+    
+
+    <div class="hidden" id="lid">
+        <form class="hidden" id="login-form">
+                <input required maxlength="15" type="text" placeholder="What is your name?">
+                <button>Login</button>
+        </form>
+    </div>
+
+    <div id="loggedin">
+        <div id = "greet_weather">
+            <h1 class="hidden" id="greeting"></h1>
+            <div id="weather">
+                <span>
+                    weather
+                </span><br>
+                <span>
+                    city
+                </span>
+            </div>
+        </div>
+    
+    
+        <div id="datetime_quote">
+            <div class="datetime">
+                <h2 id="clock">00:00:00</h2>
+                <h3 id="date">yyyy-MM-dd</h3>
+            </div>
+            
+          
+            <div id="quote">
+                <span>
+                    Text
+                </span><br>
+                <span>
+                    Author
+                </span>
+            </div>
+        </div>
+    
+        <!---->
+    
+        <div id="work">
+    
+            <div>
+                <p>Todo</p>
+                <form id="toDo-form">
+                    <input type="text" placeholder="Write a Todo and Press Enter">
+                </form>
+            </div>
+            
+            <div>
+                <p>Pending</p>
+                <ul id="pending">      
+                </ul>
+            </div>
+            
+            <div>
+                <p>Finished</p>
+                <ul id="finished">
+                </ul> 
+            </div>
+    
+           <div>
+            <p>Memo</p>
+            <form id="memo-form">
+                <input type="text" placeholder="Write a memo and Press Enter">
+            </form>
+            <ul id="memo">
+                <!--not gonna add anything here at the beginning-->
+            </ul>
+           </div>
+            
+        </div>
+        
+        <div id="icons_playlist">
+            <div id="icons">
+                <span>
+                    <i class="fa-solid fa-otter fa-3x"><a href="#"></a></i>
+                </span>
+               <span>
+                <i class="fa-brands fa-twitter fa-3x"><a href="#"></a></a></i>
+               </span>
+                <span>
+                    <i class="fa-brands fa-github fa-3x"><a href="#"></a></i>
+                </span>
+               <span>
+                <i class="fa-solid fa-n fa-3x"><a href="#"></a></i>
+               </span>
+    
+            </div>
+
+            <div id="playlist">
+                    <span id="music"><i class="fa-solid fa-music fa-4x"></i></span>
+                    <div id="btnBox"></div>
+                    <div id="volumeBox"></div>
+            </div>
+        </div>
+    
+
+        
+    </div>
+
+    <script src="./js/weather.js"></script>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/memo.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="./js/links.js"></script>
+    
+    
+
+</body>
+</html>
